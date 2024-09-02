@@ -1,0 +1,369 @@
+
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import image1 from '../public/images/picture-1.png';
+import checkboxImage from '../public/images/checkbox.png';
+import logos from '../public/images/logos.png';
+import iceburg from '../public/images/iceberg.png';
+import stats from '../public/images/stats.png';
+import statsGood from '../public/images/stats-good.png';
+import gifImage from '../public/images/deep-dive.gif';
+import puzzleImage from '../public/images/puzzle.png';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+const Index = () => {
+
+    const [futureDate, setFutureDate] = useState('');
+
+    useEffect(() => {
+        // Calculate the date 3 days from now
+        const today = new Date();
+        const futureDate = new Date(today);
+        futureDate.setDate(today.getDate() + 3);
+
+        // Format the date as "Month DD, YYYY"
+        const options = { year: 'numeric', month: 'long', day: '2-digit' };
+        const formattedDate = futureDate.toLocaleDateString('en-US', options);
+
+        setFutureDate(formattedDate);
+    }, []);
+
+    return (
+        <div>
+            <div className="main-section">
+                <h6 className="text-center developer-text">
+                    for developers who want to stand out and become irreplaceable
+                </h6>
+                <p className="text-center course-text">
+                    Become a top 1% <span className="text-gradient_blue">Next.js 14</span> developer in only one course
+                </p>
+                <p className="text-center content-text">
+                    Escape the shallow content & dive deep into the hottest tech of 2024
+                </p>
+                <div className="image-container">
+                    <Image
+                        src={image1}
+                        alt="Course image"
+                        width={550}
+                        height={550}
+                    />
+                </div>
+            </div>
+            <div className="text-center-container">
+                <Image
+                    src={checkboxImage}
+                    alt="check image"
+                    width={25}
+                    height={25}
+                />
+                <span className="date-text">Up to date:<span className='date-after'> {futureDate}</span></span>
+            </div>
+
+            <p className="text-center content-text-2">
+                Read the page if you want every single piece of information. Or just scroll to the main details by clicking the button below.
+            </p>
+
+            <div className="button-row">
+                <button className="custom-button-1">
+                    Scroll to the Details
+                    <i className="fa-solid fa-arrow-down down-arrow-icon"></i>
+                </button>
+                <button className="custom-button-2">
+                    Explore pricing options
+                    <i className="fa-solid fa-arrow-down down-arrow-icon"></i>
+                </button>
+            </div>
+
+            <div className='new-era-dev'>
+                <p className="text-left react-text">
+                    Enter the new era of React.
+                </p>
+                <p className="text-left content-text-3">
+                    Here’s a little known fact.
+                </p>
+                <p className="text-left content-text-4">
+                    17% of the top 1 million websites use Next.js.
+                </p>
+                <p className="text-left content-text-5">
+                    Are these some nameless websites? Who are these companies? Take a look.
+                </p>
+
+                <div className="image-container">
+                    <Image
+                        src={logos}
+                        alt="Course image"
+                        width={900}
+                        height={900}
+                    />
+                </div>
+
+                <p className="text-left content-text-3">
+                    Again, it's a little known fact.
+                </p>
+                <p className="text-left content-text-4">
+                    But the best companies have already realized they need to use Next.js or get left behind.
+                </p>
+
+                <div className="button-row">
+                    <i className="fa-solid fa-quote-left quote-icon"></i>
+                    <p className="text-left react-text-1">
+                        "Great. I'll use Next right now."
+                    </p>
+                    <i className="fa-solid fa-quote-right quote-icon"></i>
+                </div>
+
+                <p className="text-left content-text-3">
+                    Here’s the catch.
+                </p>
+                <p className="text-left content-text-3">
+                    Me and these massive companies don’t use Next like plain React.
+                </p>
+                <p className="text-left content-text-3">
+                    If you try using Next.js like React, you’ll make a mediocre app and miss the whole point of Next.
+                </p>
+                <p className="text-left content-text-3">
+                    That’s because you’re taught that...        </p>
+
+                <div className="button-row">
+                    <i className="fa-solid fa-quote-left quote-icon"></i>
+                    <p className="text-left react-text-1">
+                        "Next.js is just good old React"
+                    </p>
+                    <i className="fa-solid fa-quote-right quote-icon"></i>
+                </div>
+                <p className="text-left content-text-4">
+                    Wrong. Next.js is an iceberg.        </p>
+
+
+                <p className="text-left content-text-3">
+                    You <span style={{ fontWeight: 'bolder' }}>think</span> you know it because you only see the 15% of it that’s above water. </p>
+
+                <p className="text-left content-text-3">
+                    So you start coding. And like the Titanic sinking after hitting an iceberg they thought was tiny, what you didn’t know gets you.
+                </p>
+
+                <div className="image-container">
+                    <Image
+                        src={iceburg}
+                        alt="Course image"
+                        width={900}
+                        height={900}
+                    />
+                </div>
+
+                <p className="text-left content-text-4">
+                    The same thing happened to me.       </p>
+                <p className="text-left content-text-3">
+                    I jumped into the new <span style={{ fontWeight: 'bolder' }}>Next.js</span> thinking it’s the same <span style={{ fontWeight: 'bolder' }}>Next</span> and <span style={{ fontWeight: 'bolder' }}>React</span> I’m used to.  </p>
+
+                <p className="text-left content-text-3">
+                    My team and I built our website with it.
+                </p>
+                <p className="text-left content-text-3">
+                    After adding line after line of code for months?
+                </p>
+                <p className="text-left content-text-3">
+                    Without realizing it the app turned into a slow client-side mess.
+                </p>
+
+                <div className="image-container stats-image">
+                    <Image
+                        src={stats}
+                        alt="Course image"
+                        width={900}
+                        height={900}
+                    />
+                </div>
+
+                <div className="button-row">
+                    <i className="fa-solid fa-close quote-icon"></i>
+                    <p className="text-left react-text-2">
+                        It’s not your fault. What’s out there sucks
+                    </p>
+                    <i className="fa-solid fa-close quote-icon"></i>
+                </div>
+
+
+                <p className="text-left content-text-4">
+                    Next.js 13 & 14 are new. There is no good way to learn them out there.
+                </p>
+
+                <p className="text-left content-text-3">
+                    Every piece of content you see is basic.
+                </p>
+                <p className="text-left content-text-3">
+                    It doesn’t teach you the best practices.
+                </p>
+                <p className="text-left content-text-3">
+                    Most of the people teaching it have no experience building massive production-ready apps with Next 14 - so they give superficial advice (if the advice is up to date at all).
+                </p>
+
+                <p className="text-left content-text-3">
+                    You don’t want to read the never-ending docs or 7153 articles you need to learn it all.
+                </p>
+                <p className="text-left content-text-4">
+                    What if you could just take one course with...
+                </p>
+
+                <div className="button-row">
+                    <i className="fa-solid fa-leaf quote-icon"></i>
+                    <p className="text-left react-text-2">
+                        A whole new approach to learning
+                    </p>
+                    <i className="fa-solid fa-leaf quote-icon"></i>
+                </div>
+
+                <p className="text-left content-text-4">
+                    I spent almost a year deep in the Next.js ocean.
+                </p>
+
+
+                <li className='text-left content-text-3'>
+                    Building massive 5 and 6-figure apps for clients on our agency side.
+                </li>
+                <li className='text-left content-text-3'>
+                    Making tutorials & mentoring devs.
+                </li>
+                <li className='text-left content-text-3'>
+                    Rebuilding my course platform from scratch because the old way of building Next & React apps made production apps a mess.
+                </li>
+
+                <p className="text-left content-text-4">
+                    After all this? After countless daily requests for a Next14 course & after perfecting my website?
+                </p>
+                <div className="image-container stats-good-image">
+                    <Image
+                        src={statsGood}
+                        alt="Course image"
+                        width={900}
+                        height={900}
+                    />
+                </div>
+
+                <p className="text-left content-text-7">
+                    I finally decided on this three-part learning method for learning Next14 so you don’t have to struggle:
+                </p>
+
+                <p className="text-left react-text-5">
+                    1. <span className="deep-dive">Deep dive </span>& understand how it works
+                </p>
+
+                <p className="text-left content-text-3">
+                    Just knowing how to do something isn’t enough.
+                </p>
+                <p className="text-left content-text-3">
+                    Not with ChatGPT, GitHub Copilot and new tools that can output better code every day.
+                </p>
+                <p className="text-left content-text-3">
+                    See, understanding how the web actually works makes you future-proof.
+                </p>
+                <p className="text-left content-text-3">
+                    You’ll be able to prompt little pieces of code and bring them together into a well-architectured app instead of getting replaced.
+                </p>
+                <p className="text-left content-text-3">
+                    Here’s a little demo of our deep dive lectures.
+                </p>
+
+
+
+                <div className="image-container gif-image">
+                    <Image
+                        src={gifImage}
+                        alt="Course image"
+                        width={900}
+                        height={900}
+                    />
+                </div>
+
+                <p className="text-left react-text-5">
+                    2. <span className="deep-dive">Build and deploy </span> a complex app
+                </p>
+
+                <p className="text-left content-text-3">
+                    If you have half the pieces of a puzzle?
+                </p>
+                <p className="text-left content-text-3">
+                    You have a terrible puzzle.
+                </p>
+
+                <div className="image-container puzzle-image">
+                    <Image
+                        src={puzzleImage}
+                        alt="Course image"
+                        width={900}
+                        height={900}
+                    />
+                </div>
+
+                <p className="text-left content-text-3">
+                    That’s why theory, short tutorials, and docs aren’t enough. How do you actually bring it all together into a production-ready app?
+                </p>
+                <p className="text-left content-text-3">
+                    That’s what separates a great dev from the mediocre junior who just takes on tasks given from above like a robot.
+                </p>
+                <p className="text-left content-text-3">
+                    And finally...
+                </p>
+                <p className="text-left react-text-5">
+                    3. <span className="puzzle-text">Active lessons </span> so you’re 100% confident you can code it yourself
+                </p>
+                <p className="text-left content-text-3">
+                Look. The biggest issue with project-based tutorials is that people sometimes just follow along.
+                </p>
+                <p className="text-left content-text-3">
+                You need to practice yourself because no one will code the app for you.
+                </p>
+                <p className="text-left content-text-3">
+                This is why I added Active lessons.
+                </p>
+                <p className="text-left content-text-3">
+                Here you code the most important parts of the app.
+                </p>
+                <p className="text-left content-text-3">
+                You master the features of Next14 to guarantee you walk away with the skills to build stunning apps with Next14 on your own.
+                </p>
+                <p className="text-left content-text-3">
+                Here’s what these lessons look like.
+                </p>
+
+
+                <div className="image-container puzzle-image">
+                    <video
+                        width="900"
+                        height="900"
+                        controls
+                        autoPlay
+                        loop
+                        muted
+                        style={{ maxWidth: '100%', height: 'auto' }} // Ensures responsiveness
+                    >
+                        <source src="/images/video.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p className="text-left unique-text">
+                🥁 And the unique app you’ll build is...
+                </p>
+                <span className="deep-dive-text">A modern StackOverflow clone. </span>
+
+                <div className="image-container puzzle-image">
+                    <video
+                        width="900"
+                        height="900"
+                        controls
+                        autoPlay
+                        loop
+                        muted
+                        style={{ maxWidth: '100%', height: 'auto' }} // Ensures responsiveness
+                    >
+                        <source src="/images/video.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    );
+};
+
+export default Index;

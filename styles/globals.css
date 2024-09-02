@@ -1,0 +1,276 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('/fonts/fonts.css');
+@import '~@fortawesome/fontawesome-free/css/all.min.css'; /* Import Font Awesome CSS */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: var(--font-poppins);
+  padding: 80px 0px 60px;
+
+  margin: 0 auto;
+  background-color: #0d1117;
+  color: #ffff;
+  font-weight: 600;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.developer-text{
+  color: #44ffc7;
+  text-transform: uppercase;
+  font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.course-text {
+  font-size: 64px;
+  font-weight: bold;
+  width: 75%;
+  margin: auto;
+  line-height: normal;
+  margin-top: 10px;
+}
+.text-gradient_blue {
+  color: #4a78ff;
+
+}
+.content-text{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  margin-top: 40px;
+  color: #c2d7ff;
+}
+
+.main-section {
+  text-align: center; /* Center-align text and inline elements */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  margin-top: 20px; /* Optional: add space above the image */
+}
+
+.image-container img {
+  display: block; /* Remove any inline spacing issues */
+}
+/* styles/globals.css or styles/Index.module.css */
+
+.text-center-container {
+  display: flex;
+  align-items: center; /* Vertically center the image and text */
+  justify-content: center; /* Horizontally center the content */
+  text-align: center; 
+  margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.date-text {
+  margin-left: 8px; 
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #d0dfff;
+}
+.date-after {
+  color: #72ffd4;
+  background: #1f2428;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-left: 10px;
+  
+}
+
+.content-text-2{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  margin-top: 40px;
+  color: #c2d7ff;
+  width: 48%;
+    margin: auto;
+}
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between the buttons */
+  margin-top: 50px; /* Optional: space above the buttons */
+}
+
+.custom-button-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border: none;
+  background: linear-gradient(90deg, #4b77ff 2.34%, #389bff 100.78%);
+  color: white;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 2;
+  width: 30%;
+  box-shadow: 4px 5px 0px 0px white;
+  border: 2px solid #0d1117;
+}
+
+.custom-button-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border: none;
+  background: linear-gradient(90deg, #b573f8 2.34%, #854cff 100.78%);
+  color: white;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 2;
+  width: 30%;
+  box-shadow: 4px 5px 0px 0px white;
+  
+  
+}
+
+.custom-button:hover {
+  background-color: #005bb5; /* Darker background on hover */
+}
+
+.down-arrow-icon {
+  margin-left: 8px;
+  font-size: 20px; /* Adjust icon size if needed */
+}
+.new-era-dev {
+  width: 63%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.react-text {
+  font-size: 56px;
+  font-weight: 800;
+  margin: auto;
+  line-height: normal;
+  margin-top: 10px;
+}
+.content-text-3{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  margin-top: 40px;
+  color: #c2d7ff;
+    margin: auto;
+    margin-top: 20px;
+}
+.content-text-4{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  margin-top: 40px;
+  color: #c2d7ff;
+    margin: auto;
+    margin-top: 20px;
+}
+.content-text-5{
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.2px;
+  margin-top: 40px;
+  color: #c2d7ff;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.react-text-1 {
+  font-size: 35px;
+  font-weight: 800;
+  margin: auto;
+  line-height: normal;
+  
+}
+.quote-icon{
+  font-size: 70px;
+    color: #242c38;
+}
+.stats-image{
+  margin-top:35px;
+}
+.react-text-2{
+  font-size: 29px;
+  font-weight: 800;
+  margin: auto;
+  line-height: normal;
+  margin-bottom:20px;
+}
+.stats-good-image{
+  margin-top:35px;
+}
+.content-text-7{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 31.2px;
+  color: #FF7171; /* Fallback color */
+  margin: auto;
+  margin-top: 40px;
+  background: linear-gradient(90deg, #ff7170 -50.34%, #ffe57f 100.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.deep-dive{
+  color:#77abfb;
+}
+.react-text-5{
+  font-size: 29px;
+  font-weight: 800;
+  margin: auto;
+  line-height: normal;
+  margin-bottom:20px;
+  margin-top:30px;
+}
+.puzzle-image{
+  border-radius: 5px;
+}
+.puzzle-text{
+ 
+  color: #FF7171; /* Fallback color */
+  margin: auto;
+  margin-top: 40px;
+  background: linear-gradient(90deg, #ff7170 -50.34%, #ffe57f 100.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.unique-text{
+  font-size: 29px;
+  font-weight: 800;
+  margin: auto;
+  line-height: normal;
+  margin-bottom:20px;
+  margin-top:50px;
+}
+.deep-dive-text{
+  color:#77abfb;
+  font-size:24px;
+}
