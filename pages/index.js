@@ -18,6 +18,7 @@ import hayley from '../public/images/hayley.png';
 import nikky from '../public/images/nikky.png';
 import model1 from '../public/images/module-1.png';
 import model2 from '../public/images/module-2.png';
+import header from '../public/images/header.png';
 
 
 const Index = () => {
@@ -650,98 +651,134 @@ const Index = () => {
                     </div>
 
 
-                 
+
 
                 </div>
 
                 <div className="testimonial-dev-3">
 
-<div className="learn-dev-1">
-    <div className="testimonial-header">
-        <h4 className="intro-text text-left">Getting Started</h4>
-    </div>
-    <p className="testimonial-body-intro">
-        <span className="span-num">01</span> Intro
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">02</span> Prerequisites
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">03</span> Things before Next.js
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">04</span> Introduction to Next.js
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">05</span> How Web Works
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">06</span> Project Setup (ESLint, Prettier, Git &nbsp; & Github)
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">07</span> Tailwind CSS
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">08</span> Code Architecture
-    </p>
-    <Image
-        src={model1}
-        alt="Course image"
-        width={120}
-        height={120}
-        style={{ borderRadius: '10px' }}
-        className="model-1"
-    />
+                    <div className="learn-dev-1">
+                        <div className="testimonial-header">
+                            <h4 className="intro-text text-left">Getting Started</h4>
+                        </div>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">01</span> Intro
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">02</span> Prerequisites
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">03</span> Things before Next.js
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">04</span> Introduction to Next.js
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">05</span> How Web Works
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">06</span> Project Setup (ESLint, Prettier, Git &nbsp; & Github)
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">07</span> Tailwind CSS
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">08</span> Code Architecture
+                        </p>
+                        <Image
+                            src={model1}
+                            alt="Course image"
+                            width={120}
+                            height={120}
+                            style={{ borderRadius: '10px' }}
+                            className="model-1"
+                        />
 
 
-</div>
+                    </div>
 
 
-<div className="learn-dev-2 ">
-    <div className="testimonial-header">
-        <h4 className="intro-text text-left">Routing, Core Concepts, and UI Mastery</h4>
-    </div>
-    <p className="testimonial-body-intro">
-        <span className="span-num">09</span> Routing
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">10</span> Next.js Core Architecture
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">03</span> Things before Next.js
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">04</span> Introduction to Next.js
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">05</span> How Web Works
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">06</span> Project Setup (ESLint, Prettier, Git &nbsp; & Github)
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">07</span> Tailwind CSS
-    </p>
-    <p className="testimonial-body-intro">
-        <span className="span-num">08</span> Code Architecture
-    </p>
-    <Image
-        src={model2}
-        alt="Course image"
-        width={120}
-        height={120}
-        style={{ borderRadius: '10px' }}
-        className="model-1"
-    />
+                    <div className="learn-dev-2 ">
+                        <div className="testimonial-header">
+                            <h4 className="intro-text text-left">Routing, Core Concepts, and UI Mastery</h4>
+                        </div>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">09</span> Routing
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">10</span> Next.js Core Architecture
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">03</span> Things before Next.js
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">04</span> Introduction to Next.js
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">05</span> How Web Works
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">06</span> Project Setup (ESLint, Prettier, Git &nbsp; & Github)
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">07</span> Tailwind CSS
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">08</span> Code Architecture
+                        </p>
+                        <Image
+                            src={model2}
+                            alt="Course image"
+                            width={120}
+                            height={120}
+                            style={{ borderRadius: '10px' }}
+                            className="model-1"
+                        />
 
 
-</div>
+                    </div>
 
 
 
 
-</div>
+                </div>
+                <div className="button-row-learn mt-4">
 
+                    <p className="text-center review-text">
+                        You’ll also get these bonuses 👀
+                    </p>
+
+
+                </div>
+
+
+
+            </div>
+
+            {/* new-era-ended */}
+
+            
+                            {/* ultimate-container */}
+
+
+            <div className='ultimate-container'>
+                <div className='ultimate-dev'>
+                    <div>
+                        <p className='ultimate-dev-text'>Bonus #1 - Ebook (200 pages)</p>
+                        <p className="text-left review-heading-text">
+                            The Ultimate Next.js 14 Ebook
+                        </p>
+                    </div>
+                    <div>
+                        <Image
+                            src={header}
+                            alt="Profile"
+                            width={900}   // or set the appropriate size
+                            height={900}  // or set the appropriate size
+                            className="header-img"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );
