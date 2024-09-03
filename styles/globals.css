@@ -473,3 +473,86 @@ body {
   font-weight: 700;
   margin-top:20px;
 }
+
+/* media-query */
+
+@media screen and (max-width: 576px) {
+  .course-text{
+    font-size: 40px;
+  }
+  .developer-text {
+    font-size: 15px;  
+    line-height: 26px;
+}
+.content-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.2px;
+  margin-top: 32px;
+  color: #c2d7ff;
+}
+.image-1{
+  width:75%;
+}
+.content-text-2{
+  width: 92%;
+}
+.scroll-dev{
+  display:block;
+}
+.custom-button-1{
+  width: 90%;
+  margin:auto;
+}
+.custom-button-2{
+  width: 90%;
+  margin:auto;
+  margin-top:15px;
+}
+.new-era-dev{
+  width: 85%;
+}
+.react-text{
+  font-size: 40px;
+}
+.react-text-1 {
+  font-size: 18px;
+  font-weight: 700;
+
+}
+.react-text-2 {
+  font-size: 20px;
+}
+.quote-icon{
+  font-size: 45px;
+}
+.custom-convince-text{
+  width: 95%;
+  font-size: 16px;
+}
+.unique-text {
+  font-size: 24px;
+}
+.review-text {
+  font-size: 22px;
+}
+.testimonial-dev {
+  display: block;
+}
+.testimonial-dev-2 {
+  display: block;
+}
+.all-review{
+  width: 70%;
+}
+.testimonial-dev-3 {
+  display: block;
+}
+.learn-dev-1{
+  width: 100%;
+}
+.learn-dev-2{
+  width: 100%;
+  margin-top: 60px;
+}
+}

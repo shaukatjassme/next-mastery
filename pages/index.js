@@ -55,6 +55,7 @@ const Index = () => {
                         alt="Course image"
                         width={550}
                         height={550}
+                        className='image-1'
                     />
                 </div>
             </div>
@@ -72,7 +73,7 @@ const Index = () => {
                 Read the page if you want every single piece of information. Or just scroll to the main details by clicking the button below.
             </p>
 
-            <div className="button-row">
+            <div className="button-row scroll-dev">
                 <button className="custom-button-1">
                     Scroll to the Details
                     <i className="fa-solid fa-arrow-down down-arrow-icon"></i>
