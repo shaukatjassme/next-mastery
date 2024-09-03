@@ -19,6 +19,7 @@ import nikky from '../public/images/nikky.png';
 import model1 from '../public/images/module-1.png';
 import model2 from '../public/images/module-2.png';
 import header from '../public/images/header.png';
+import comingSoon from '../public/images/R.jpg';
 
 
 const Index = () => {
@@ -758,7 +759,7 @@ const Index = () => {
             {/* new-era-ended */}
 
 
-                            {/* ultimate-container */}
+            {/* ultimate-container */}
 
 
             <div className='ultimate-container'>
@@ -779,6 +780,30 @@ const Index = () => {
                         />
                     </div>
                 </div>
+
+                <p className="text-center review-text-bonuses">
+                    Frequently Asked Questions
+                </p>
+
+                {/* <div className="collapsible-container">
+                    <input type="checkbox" id="collapsible-toggle" className="collapsible-toggle" />
+                    <label for="collapsible-toggle" className="collapsible-label">
+                       
+                    What do I need to know to take this course?  <span className="icon"></span>
+                    </label>
+                    <div className="collapsible-content">
+                        <p>To take this course you’ll need intermediate JavaScript knowledge and beginner React knowledge. You don’t need any Next.js knowledge.</p>
+                    </div>
+                </div> */}
+
+                <Image
+                    src={comingSoon}
+                    alt="Profile"
+                     // or set the appropriate size
+                    className="header-img mt-4"
+                    style={{borderRadius:'10px'}}
+                />
+
             </div>
         </div>
     );

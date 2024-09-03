@@ -513,6 +513,69 @@ body {
  
   margin-top:50px;
 }
+
+/* Base styles for the collapsible container */
+.collapsible-container {
+  width: 300px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hides the checkbox */
+.collapsible-toggle {
+  display: none;
+}
+
+/* Styles for the label (acts as the toggle button) */
+.collapsible-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: left;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible-label:hover {
+  background-color: #e1e1e1;
+}
+
+/* Styles for the icon */
+.collapsible-label .icon::before {
+  content: '+';
+  font-size: 20px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Styles for the collapsible content */
+.collapsible-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  padding: 0 10px;
+}
+
+/* Show the collapsible content and change icon when checkbox is checked */
+.collapsible-toggle:checked + .collapsible-label .icon::before {
+  content: '-'; /* Change to minus sign */
+}
+
+.collapsible-toggle:checked + .collapsible-label + .collapsible-content {
+  height: auto;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+
 /* media-query */
 
 @media screen and (max-width: 576px) {
