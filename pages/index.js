@@ -744,7 +744,7 @@ const Index = () => {
                 </div>
                 <div className="button-row-learn mt-4">
 
-                    <p className="text-center review-text">
+                    <p className="text-center review-text-bonuses">
                         You’ll also get these bonuses 👀
                     </p>
 
@@ -757,7 +757,7 @@ const Index = () => {
 
             {/* new-era-ended */}
 
-            
+
                             {/* ultimate-container */}
 
 
