@@ -9,7 +9,16 @@ import stats from '../public/images/stats.png';
 import statsGood from '../public/images/stats-good.png';
 import gifImage from '../public/images/deep-dive.gif';
 import puzzleImage from '../public/images/puzzle.png';
+import logoShort from '../public/images/logos-short.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { FaStar } from 'react-icons/fa';
+import webDev from '../public/images/webdev.png';
+import codeStackr from '../public/images/codeStackr.png';
+import hayley from '../public/images/hayley.png';
+import nikky from '../public/images/nikky.png';
+import model1 from '../public/images/module-1.png';
+import model2 from '../public/images/module-2.png';
+
 
 const Index = () => {
 
@@ -172,6 +181,7 @@ const Index = () => {
                         alt="Course image"
                         width={900}
                         height={900}
+                        style={{ borderRadius: '10px' }}
                     />
                 </div>
 
@@ -237,6 +247,7 @@ const Index = () => {
                         alt="Course image"
                         width={900}
                         height={900}
+                        style={{ borderRadius: '10px' }}
                     />
                 </div>
 
@@ -292,6 +303,7 @@ const Index = () => {
                         alt="Course image"
                         width={900}
                         height={900}
+                        style={{ borderRadius: '10px' }}
                     />
                 </div>
 
@@ -308,22 +320,22 @@ const Index = () => {
                     3. <span className="puzzle-text">Active lessons </span> so you’re 100% confident you can code it yourself
                 </p>
                 <p className="text-left content-text-3">
-                Look. The biggest issue with project-based tutorials is that people sometimes just follow along.
+                    Look. The biggest issue with project-based tutorials is that people sometimes just follow along.
                 </p>
                 <p className="text-left content-text-3">
-                You need to practice yourself because no one will code the app for you.
+                    You need to practice yourself because no one will code the app for you.
                 </p>
                 <p className="text-left content-text-3">
-                This is why I added Active lessons.
+                    This is why I added Active lessons.
                 </p>
                 <p className="text-left content-text-3">
-                Here you code the most important parts of the app.
+                    Here you code the most important parts of the app.
                 </p>
                 <p className="text-left content-text-3">
-                You master the features of Next14 to guarantee you walk away with the skills to build stunning apps with Next14 on your own.
+                    You master the features of Next14 to guarantee you walk away with the skills to build stunning apps with Next14 on your own.
                 </p>
                 <p className="text-left content-text-3">
-                Here’s what these lessons look like.
+                    Here’s what these lessons look like.
                 </p>
 
 
@@ -342,7 +354,7 @@ const Index = () => {
                     </video>
                 </div>
                 <p className="text-left unique-text">
-                🥁 And the unique app you’ll build is...
+                    🥁 And the unique app you’ll build is...
                 </p>
                 <span className="deep-dive-text">A modern StackOverflow clone. </span>
 
@@ -354,12 +366,380 @@ const Index = () => {
                         autoPlay
                         loop
                         muted
-                        style={{ maxWidth: '100%', height: 'auto' }} // Ensures responsiveness
+                        style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px' }} // Ensures responsiveness
                     >
                         <source src="/images/video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
+
+                <p className="text-left mt-5 content-text-3">
+                    Not an Amazon or Youtube clone every dev and their mother has in their portfolio 😬
+                </p>
+                <p className="text-left mt-5 content-text-3">
+                    Nope.
+                </p>
+                <p className="text-left mt-5 content-text-3">
+                    The DevOverflow app has:
+                </p>
+
+                <p className="text-left content-text-4" style={{ marginLeft: '20px' }}>
+                    1.   A recommendation system for posts (no one teaches this)
+                </p>
+                <p className="text-left content-text-4" style={{ marginLeft: '20px' }}>
+                    2.   Global database data-fetching
+                </p>
+                <p className="text-left content-text-4" style={{ marginLeft: '20px' }}>
+                    3.   AI generated answers to questions
+                </p>
+                <p className="text-left content-text-4" style={{ marginLeft: '20px' }}>
+                    4.   Badge & Reputation System
+                </p>
+                <p className="text-left content-text-4" style={{ marginLeft: '20px' }}>
+                    5.   Views and Voting Mechanism
+                </p>
+                <p className="text-left content-text-4" style={{ marginLeft: '20px' }}>
+                    6.   Filter and Pagination for almost all pages & so much more
+                </p>
+
+                <div className="button-row">
+                    {/* <i className="fa-solid fa-leaf quote-icon"></i> */}
+                    <p className="text-left react-text-2">
+                        “ Okay okay, you convinced me. “
+                    </p>
+                    {/* <i className="fa-solid fa-leaf quote-icon"></i> */}
+                </div>
+
+
+                <div className="convinc-dev">
+
+                    <button className="custom-convince-text">
+                        Take me to the pricing section!
+                        <i className="fa-solid fa-arrow-down down-arrow-icon"></i>
+                    </button>
+                </div>
+
+                <p className="text-left unique-text">
+                    Master the most sought-after tech stack of 2023 and beyond
+                </p>
+
+                <div className="image-container puzzle-image logos-short">
+                    <Image
+                        src={logoShort}
+                        alt="Course image"
+                        width={900}
+                        height={900}
+                        style={{ borderRadius: '10px' }}
+                    />
+                </div>
+                <p className="text-left content-text-3" >
+                    You’ll need intermediate knowledge of JavaScript (eg. array methods, spread, try catch...) and beginner knowledge of React (components & JSX syntax, managing state, functional components) to take the course.
+                </p>
+                <p className="text-left content-text-3" >
+                    If you’re unfamiliar with these, don’t worry. We’ll provide you the resources to get you up to speed, but it definitely won’t be as easy as if you had experience beforehand.
+                </p>
+                <p className="text-left content-text-3" >
+                    If you’re asking if you need to know TypeScript - you don’t. Here at JSM we learn by building apps & this is the perfect chance to learn it since TypeScript is used in most industry projects.                                </p>
+                <p className="text-center review-text">
+                    The reviews are in.
+                </p>
+
+
+
+                <div className="testimonial-dev">
+
+                    <div className="testimonial">
+                        <div className="testimonial-header">
+                            {[...Array(5)].map((_, index) => (
+                                <FaStar key={index} className="star-icon" />
+                            ))}
+                        </div>
+                        <p className="testimonial-body">
+                            JS Mastery's Next.js course is amazing. The way Adrian structures the course by giving you active lessons that you build out on your own is perfect for learning. These active lessons have just the right amount of difficulty so you are never lost yet are always pushing yourself and learning more. Also, by the end of the course you will have an incredible project that would make any portfolio stand out.
+                        </p>
+                        <div className="testimonial-profile">
+                            <Image
+                                src={webDev}
+                                alt="Profile"
+                                width={30}   // or set the appropriate size
+                                height={30}  // or set the appropriate size
+                                className="profile-pic"
+                            />
+                            <div className="profile-info">
+                                <h4 className="profile-name">Web Dev Simplified</h4>
+                                <p className="profile-occupation">Youtuber | 1.4M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div className="testimonial">
+                        <div className="testimonial-header">
+                            {[...Array(5)].map((_, index) => (
+                                <FaStar key={index} className="star-icon-2" />
+                            ))}
+                        </div>
+                        <p className="testimonial-body">
+                            This course is a game-changer for anyone serious about mastering Next.js 14. Adrian's teaching style is engaging, the curriculum is exhaustive, and the focus on active, hands-on learning is unparalleled. Building DevFlow, a real-world app, can not only solidified your understanding but also gave you a portfolio-worthy project. If you want to become a top 1% Next.js developer, this course is your roadmap.                        </p>
+                        <div className="testimonial-profile">
+                            <Image
+                                src={codeStackr}
+                                alt="Profile"
+                                width={30}   // or set the appropriate size
+                                height={30}  // or set the appropriate size
+                                className="profile-pic"
+                            />
+                            <div className="profile-info">
+                                <h4 className="profile-name">Jesse Hall (codeSTACKr)</h4>
+                                <p className="profile-occupation">Youtuber | 289K subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="testimonial-dev-2">
+
+                    <div className="testimonial">
+                        <div className="testimonial-header">
+                            {[...Array(5)].map((_, index) => (
+                                <FaStar key={index} className="star-icon-3" />
+                            ))}
+                        </div>
+                        <p className="testimonial-body">
+                            The team at JS Mastery have done it again! Clear and thorough videos broken down step-by-step, frequent prompts to get you thinking in the 'Next 14 way' - and perhaps the best part of all - interactive tasks (with Figma designs!) to solidify your knowledge. Wow, forget passive learning... great job, JS Mastery!
+                        </p>
+                        <div className="testimonial-profile">
+                            <Image
+                                src={hayley}
+                                alt="Profile"
+                                width={30}   // or set the appropriate size
+                                height={30}  // or set the appropriate size
+                                className="profile-pic"
+                            />
+                            <div className="profile-info">
+                                <h4 className="profile-name">Hayley Wood</h4>
+                                <p className="profile-occupation">React Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div className="testimonial">
+                        <div className="testimonial-header">
+                            {[...Array(5)].map((_, index) => (
+                                <FaStar key={index} className="star-icon-3" />
+                            ))}
+                        </div>
+                        <p className="testimonial-body">
+                            I have been eagerly anticipating this release, which has surpassed my expectations! Finally, there exists a comprehensive one-stop destination to learn everything Next.js. This course is a testament to the dedication and expertise of its creators, and I couldn’t be more impressed. For anyone looking to master Next.js, this is an indispensable resource that I highly recommend!
+                        </p>
+                        <div className="testimonial-profile">
+                            <Image
+                                src={nikky}
+                                alt="Profile"
+                                width={30}   // or set the appropriate size
+                                height={30}  // or set the appropriate size
+                                className="profile-pic"
+                            />
+                            <div className="profile-info">
+                                <h4 className="profile-name">Jesse Hall (codeSTACKr)</h4>
+                                <p className="profile-occupation">Youtuber | 289K subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div className='text-center mt-5'><button className='all-review'> See all reviews</button></div>
+
+
+
+                <div className="button-row-learn mt-4">
+
+                    <p className="text-center review-text">
+                        <i className="fa-solid fa-arrow-down down-arrow-icon-learn"></i>   See what you’ll learn  <i className="fa-solid fa-arrow-down down-arrow-icon-learn"></i>
+                    </p>
+
+
+                </div>
+
+                <div className="testimonial-dev-3">
+
+                    <div className="learn-dev-1">
+                        <div className="testimonial-header">
+                            <h4 className="intro-text text-left">Getting Started</h4>
+                        </div>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">01</span> Intro
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">02</span> Prerequisites
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">03</span> Things before Next.js
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">04</span> Introduction to Next.js
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">05</span> How Web Works
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">06</span> Project Setup (ESLint, Prettier, Git &nbsp; & Github)
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">07</span> Tailwind CSS
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">08</span> Code Architecture
+                        </p>
+                        <Image
+                            src={model1}
+                            alt="Course image"
+                            width={120}
+                            height={120}
+                            style={{ borderRadius: '10px' }}
+                            className="model-1"
+                        />
+
+
+                    </div>
+
+
+                    <div className="learn-dev-2 ">
+                        <div className="testimonial-header">
+                            <h4 className="intro-text text-left">Routing, Core Concepts, and UI Mastery</h4>
+                        </div>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">09</span> Routing
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">10</span> Next.js Core Architecture
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">03</span> Things before Next.js
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">04</span> Introduction to Next.js
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">05</span> How Web Works
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">06</span> Project Setup (ESLint, Prettier, Git &nbsp; & Github)
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">07</span> Tailwind CSS
+                        </p>
+                        <p className="testimonial-body-intro">
+                            <span className="span-num">08</span> Code Architecture
+                        </p>
+                        <Image
+                            src={model2}
+                            alt="Course image"
+                            width={120}
+                            height={120}
+                            style={{ borderRadius: '10px' }}
+                            className="model-1"
+                        />
+
+
+                    </div>
+
+
+                 
+
+                </div>
+
+                <div className="testimonial-dev-3">
+
+<div className="learn-dev-1">
+    <div className="testimonial-header">
+        <h4 className="intro-text text-left">Getting Started</h4>
+    </div>
+    <p className="testimonial-body-intro">
+        <span className="span-num">01</span> Intro
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">02</span> Prerequisites
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">03</span> Things before Next.js
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">04</span> Introduction to Next.js
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">05</span> How Web Works
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">06</span> Project Setup (ESLint, Prettier, Git &nbsp; & Github)
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">07</span> Tailwind CSS
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">08</span> Code Architecture
+    </p>
+    <Image
+        src={model1}
+        alt="Course image"
+        width={120}
+        height={120}
+        style={{ borderRadius: '10px' }}
+        className="model-1"
+    />
+
+
+</div>
+
+
+<div className="learn-dev-2 ">
+    <div className="testimonial-header">
+        <h4 className="intro-text text-left">Routing, Core Concepts, and UI Mastery</h4>
+    </div>
+    <p className="testimonial-body-intro">
+        <span className="span-num">09</span> Routing
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">10</span> Next.js Core Architecture
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">03</span> Things before Next.js
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">04</span> Introduction to Next.js
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">05</span> How Web Works
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">06</span> Project Setup (ESLint, Prettier, Git &nbsp; & Github)
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">07</span> Tailwind CSS
+    </p>
+    <p className="testimonial-body-intro">
+        <span className="span-num">08</span> Code Architecture
+    </p>
+    <Image
+        src={model2}
+        alt="Course image"
+        width={120}
+        height={120}
+        style={{ borderRadius: '10px' }}
+        className="model-1"
+    />
+
+
+</div>
+
+
+
+
+</div>
 
             </div>
         </div>
