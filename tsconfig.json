@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // Set the base URL to the root directory
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -11,6 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": ".", 
     "incremental": true,
     "plugins": [
       {
@@ -18,7 +20,7 @@
       }
     ],
     "paths": {
-      "@/*": ["pages/*"]
+      "@/*": ["./pages/*"] // Ensure paths are relative to the baseUrl
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
