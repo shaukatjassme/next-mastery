@@ -20,11 +20,13 @@ import model1 from '../public/images/module-1.png';
 import model2 from '../public/images/module-2.png';
 import header from '../public/images/header.png';
 import comingSoon from '../public/images/R.jpg';
-
+import SwitchButton from '../components/SwitchButton';
 
 const Index = () => {
 
     const [futureDate, setFutureDate] = useState('');
+    const [price, setPrice] = useState(74.85);
+
 
     useEffect(() => {
         // Calculate the date 3 days from now
@@ -38,6 +40,10 @@ const Index = () => {
 
         setFutureDate(formattedDate);
     }, []);
+
+    const handleToggle = () => {
+        setPrice((prevPrice) => prevPrice * 2); // Increase price by 1 on each toggle
+    };
 
     return (
         <div>
@@ -766,6 +772,10 @@ const Index = () => {
                 <div className='ultimate-dev'>
                     <div>
                         <p className='ultimate-dev-text'>Bonus #1 - Ebook (200 pages)</p>
+                     
+                     
+                     
+                     
                         <p className="text-left review-heading-text">
                             The Ultimate Next.js 14 Ebook
                         </p>
@@ -781,30 +791,234 @@ const Index = () => {
                     </div>
                 </div>
 
+             
+
+
+                <p className="text-center review-text-bonuses">
+                Become a top 1% Next.js developer & lead the Next era of React
+                </p>
+                <p className='ultimate-dev-text text-center mt-4 mb-5'> <i className="fa-solid fa-graduation-cap degree-completed-icon"></i>  2976+ developers already enrolled</p>
+
+                <div className="pricing">
+                    <div className="plan">
+                        <div className="all-card-content">
+                            <div className="first-price-table">
+                                <h2 className='title-text'>The Basic Package</h2>
+                                <div className="price-text">Build and deploy DevOverflow</div>
+                                <p className="text-center price-text-bonuses">
+                                    ${price.toFixed(2)}
+                                </p>
+                                <p class="text-center mt-5 include-text">Price including sales tax</p>
+                                <div className='button-row-switch'>
+                                    <p class="text-center include-text-forself">For myself</p>
+                                    <div>
+
+                                        <SwitchButton onToggle={handleToggle} />
+                                    </div>
+                                    <p class="text-center include-text-forself">For teams</p>
+                                </div>
+                                <button className="price-button">Buy now</button>
+
+
+                                <p class="text-center mt-5 include-text">30-Day Money-Back Guarantee</p>
+
+
+
+                            </div>
+                            <p className="location-text text-left">It looks like you're located in 🇵🇰Pakistan.
+
+                                This is a premium course with a premium price, but I don't want it to be impossible to get if you're from a country with lower purchasing power.</p>
+                            <p className="location-text-2 mb-0 text-left">It looks like you're located in 🇵🇰Pakistan.
+
+                                That is why regional discount is applied automatically. Note that you will only be able to view content from within Pakistan.</p>
+
+                            <div className="first-price-table">
+                                <p class="text-left  dev-over-text">Build DevOverflow and learn how to build Next14 apps.</p>
+                                <div className='button-row-include'>
+                                    <hr /><p class="text-center include-text-forself2">IT INCLUDES</p><hr />
+                                </div>
+                            </div>
+
+                            <div className="depth-price-table">
+                                <Image
+                                    src={model1}
+                                    alt="Profile"
+                                    // or set the appropriate size
+                                    className="header-img mt-4 depth-img"
+                                    style={{ borderRadius: '10px' }}
+
+                                />
+                                <div className="depth-price-text text-left">In-depth Build & Deploy DevOverflow App (20 hours)</div>
+                            </div>
+                            <div className="depth-price-text text-left">Features</div>
+                            <div className="depth-price-table">
+                                <Image
+                                    src={checkboxImage}
+                                    alt="Profile"
+                                    // or set the appropriate size
+                                    className="header-img mt-4 depth-img-2"
+                                    style={{ borderRadius: '10px' }}
+
+                                />
+                                <p class="text-left money-text">30-Day Money-Back Guarantee</p>
+                            </div>
+                            <div className="depth-price-table">
+                                <Image
+                                    src={checkboxImage}
+                                    alt="Profile"
+                                    // or set the appropriate size
+                                    className="header-img mt-4 depth-img-2"
+                                    style={{ borderRadius: '10px' }}
+
+                                />
+                                <p class="text-left money-text">Lifetime access</p>
+                            </div>
+                            <div className="depth-price-table">
+                                <Image
+                                    src={checkboxImage}
+                                    alt="Profile"
+                                    // or set the appropriate size
+                                    className="header-img mt-4 depth-img-2"
+                                    style={{ borderRadius: '10px' }}
+
+                                />
+                                <p class="text-left money-text">Private & active Discord community</p>
+                            </div>
+                            <div className="depth-price-table">
+                                <Image
+                                    src={checkboxImage}
+                                    alt="Profile"
+                                    // or set the appropriate size
+                                    className="header-img mt-4 depth-img-2"
+                                    style={{ borderRadius: '10px' }}
+
+                                />
+                                <p class="text-left money-text">Access to GitHub Repository </p>
+                            </div>
+                            <div className="depth-price-table">
+                                <button className="price-button mb-5">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="plan">
+                        <div className="all-card-content">
+                            <div className="first-price-table">
+                                <h2 className='title-text'>The Master Package</h2>
+                                <div className="price-text">Deep dive + Build & Deploy + Active lessons</div>
+                                <p className="text-center price-text-bonuses">
+                                $89.85
+                                </p>
+                                <p class="text-center mt-5 include-text">Price including sales tax</p>
+                                <div className='button-row-switch'>
+                                    <p class="text-center include-text-forself">For myself</p>
+                                    <div>
+
+                                        <SwitchButton  />
+                                    </div>
+                                    <p class="text-center include-text-forself">For teams</p>
+                                </div>
+                                <button className="price-button">Buy now</button>
+
+
+                                <p class="text-center mt-5 include-text">30-Day Money-Back Guarantee</p>
+
+
+
+                            </div>
+                            <p className="location-text text-left">It looks like you're located in 🇵🇰Pakistan.
+
+                                This is a premium course with a premium price, but I don't want it to be impossible to get if you're from a country with lower purchasing power.</p>
+                            <p className="location-text-2 mb-0 text-left">It looks like you're located in 🇵🇰Pakistan.
+
+                                That is why regional discount is applied automatically. Note that you will only be able to view content from within Pakistan.</p>
+
+                            <div className="first-price-table">
+                                <p class="text-left  dev-over-text">Build DevOverflow and learn how to build Next14 apps.</p>
+                                <div className='button-row-include'>
+                                    <hr /><p class="text-center include-text-forself2">IT INCLUDES</p><hr />
+                                </div>
+                            </div>
+
+                            <div className="depth-price-table">
+                                <Image
+                                    src={model1}
+                                    alt="Profile"
+                                    // or set the appropriate size
+                                    className="header-img mt-4 depth-img"
+                                    style={{ borderRadius: '10px' }}
+
+                                />
+                                <div className="depth-price-text text-left">In-depth Build & Deploy DevOverflow App (20 hours)</div>
+                            </div>
+                            <div className="depth-price-text text-left">Features</div>
+                            <div className="depth-price-table">
+                                <Image
+                                    src={checkboxImage}
+                                    alt="Profile"
+                                    // or set the appropriate size
+                                    className="header-img mt-4 depth-img-2"
+                                    style={{ borderRadius: '10px' }}
+
+                                />
+                                <p class="text-left money-text">30-Day Money-Back Guarantee</p>
+                            </div>
+                            <div className="depth-price-table">
+                                <Image
+                                    src={checkboxImage}
+                                    alt="Profile"
+                                    // or set the appropriate size
+                                    className="header-img mt-4 depth-img-2"
+                                    style={{ borderRadius: '10px' }}
+
+                                />
+                                <p class="text-left money-text">Lifetime access</p>
+                            </div>
+                            <div className="depth-price-table">
+                                <Image
+                                    src={checkboxImage}
+                                    alt="Profile"
+                                    // or set the appropriate size
+                                    className="header-img mt-4 depth-img-2"
+                                    style={{ borderRadius: '10px' }}
+
+                                />
+                                <p class="text-left money-text">Private & active Discord community</p>
+                            </div>
+                            <div className="depth-price-table">
+                                <Image
+                                    src={checkboxImage}
+                                    alt="Profile"
+                                    // or set the appropriate size
+                                    className="header-img mt-4 depth-img-2"
+                                    style={{ borderRadius: '10px' }}
+
+                                />
+                                <p class="text-left money-text">Access to GitHub Repository </p>
+                            </div>
+                            <div className="depth-price-table">
+                                <button className="price-button mb-5">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <p className="text-center review-text-bonuses">
                     Frequently Asked Questions
                 </p>
 
-                {/* <div className="collapsible-container">
-                    <input type="checkbox" id="collapsible-toggle" className="collapsible-toggle" />
-                    <label for="collapsible-toggle" className="collapsible-label">
-                       
-                    What do I need to know to take this course?  <span className="icon"></span>
-                    </label>
-                    <div className="collapsible-content">
-                        <p>To take this course you’ll need intermediate JavaScript knowledge and beginner React knowledge. You don’t need any Next.js knowledge.</p>
-                    </div>
-                </div> */}
+
 
                 <Image
                     src={comingSoon}
                     alt="Profile"
-                     // or set the appropriate size
+                    // or set the appropriate size
                     className="header-img mt-4"
-                    style={{borderRadius:'10px'}}
+                    style={{ borderRadius: '10px' }}
                 />
 
             </div>
+
+
         </div>
     );
 };
