@@ -82,14 +82,17 @@ const Index = () => {
             </p>
 
             <div className="button-row scroll-dev">
+             <a href='#button-row-id'>
                 <button className="custom-button-1">
                     Scroll to the Details
                     <i className="fa-solid fa-arrow-down down-arrow-icon"></i>
-                </button>
+                </button></a>
+                <a href='#pricing-id'>
                 <button className="custom-button-2">
                     Explore pricing options
                     <i className="fa-solid fa-arrow-down down-arrow-icon"></i>
                 </button>
+                </a>
             </div>
 
             <div className='new-era-dev'>
@@ -224,7 +227,7 @@ const Index = () => {
                     What if you could just take one course with...
                 </p>
 
-                <div className="button-row">
+                <div className="button-row" id='button-row-id'>
                     <i className="fa-solid fa-leaf quote-icon"></i>
                     <p className="text-left react-text-2">
                         A whole new approach to learning
@@ -799,7 +802,7 @@ const Index = () => {
                 </p>
                 <p className='ultimate-dev-text text-center mt-4 mb-5'> <i className="fa-solid fa-graduation-cap degree-completed-icon"></i>  2976+ developers already enrolled</p>
 
-                <div className="pricing">
+                <div className="pricing" id="pricing-id">
                     <div className="plan">
                         <div className="all-card-content">
                             <div className="first-price-table">

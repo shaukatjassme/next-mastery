@@ -132,7 +132,7 @@ body {
   font-size: 20px;
   cursor: pointer;
   line-height: 2;
-  width: 30%;
+  width: 100%;
   box-shadow: 4px 5px 0px 0px white;
   border: 2px solid #0d1117;
 }
@@ -149,7 +149,7 @@ body {
   font-size: 20px;
   cursor: pointer;
   line-height: 2;
-  width: 30%;
+  width: 100%;
   box-shadow: 4px 5px 0px 0px white;
   
   
