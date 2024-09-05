@@ -901,4 +901,24 @@ font-size: 18px;
   font-size: 18px;
   margin-bottom: 30px;
 }
+.plan{
+  width: 100% !important;
+  padding: 0.5rem !important;
+}
+.pricing{
+  display:block;
+}
+.include-text-forself {
+  font-size: 14px;
+}
+.include-text-forself {
+  font-size: 14px;
+}
+.include-text-forself {
+    font-size: 14px;
+
+}
+hr{
+  width: 20%;;
+}
 }
